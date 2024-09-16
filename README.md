@@ -22,6 +22,8 @@ Example of digits sticked together:
 
 Secondly, reference the offset to the RGB image and consecutively pass each single digit through a classifier to classify it into a digit from 0-9.
 
+The classifier is fine-tuned on MobileNetV2 with custom dataset.
+
 | Image | Result|
 | ------------- | ------------- |
 | <img src="https://github.com/nguyenhaphan1/ID-Recognition-With-Contour-Separation-And-Classifier/blob/main/images/id_15.jpg" alt="mjsynth" width="118" height="31"> | 030093009624 |
