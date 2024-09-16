@@ -11,7 +11,7 @@ Firstly, the image is converted to Gray-scaled image, then applying AdapiveThres
 | ------------- | ------------- |
 | <img src="https://github.com/nguyenhaphan1/ID-Recognition-With-Contour-Separation-And-Classifier/blob/main/images/id_15.jpg" alt="mjsynth" width="118" height="31"> | <img src="https://github.com/nguyenhaphan1/ID-Recognition-With-Contour-Separation-And-Classifier/blob/main/images/binary.png" alt="mjsynth" width="118" height="31"> |
 
-After that, finding contour of the images, draw bounding box for each contour (each bbox represent the image of a single digit. Using attribute such as width, height and area to split digits sticking together into single digit.
+After that, finding contour of the images, draw bounding box for each contour (each bbox represent the image of a single digit. Using attribute such as width, height and area to split digits sticking together into single digit. 
 
 Example of digits sticked together:
 
@@ -20,7 +20,8 @@ Example of digits sticked together:
 | 3 digits sticked  | <img src="https://github.com/nguyenhaphan1/ID-Recognition-With-Contour-Separation-And-Classifier/blob/main/images/3stickimage.png" alt="mjsynth" width="26" height="20">  |
 | 5 digits sticked  | <img src="https://github.com/nguyenhaphan1/ID-Recognition-With-Contour-Separation-And-Classifier/blob/main/images/5stickimage.png" alt="mjsynth" width="45" height="20">  |
 
-Secondly, each single digit is consecutively pass through a classifier to classify it into a digit from 0-9.
+Secondly, reference the offset to the RGB image and consecutively pass each single digit through a classifier to classify it into a digit from 0-9.
+
 | Image | Result|
 | ------------- | ------------- |
 | <img src="https://github.com/nguyenhaphan1/ID-Recognition-With-Contour-Separation-And-Classifier/blob/main/images/id_15.jpg" alt="mjsynth" width="118" height="31"> | 030093009624 |
