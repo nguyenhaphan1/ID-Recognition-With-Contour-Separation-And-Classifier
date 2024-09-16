@@ -5,7 +5,13 @@ This is another approach to handle ID Recognition. This method is combined of ex
 
 <img src="https://github.com/nguyenhaphan1/ID-Recognition-With-Contour-Separation-And-Classifier/blob/main/pipeline.png" alt="mjsynth" width="800" height="200">
 
-Firstly, the image is converted to Gray-scaled image, then applying AdapiveThreshold to separate the digits with background. After that, finding contour of the images, draw bounding box for each contour (each bbox represent the image of a single digit. Using attribute such as width, height and area to split digits sticking together into single digit.
+Firstly, the image is converted to Gray-scaled image, then applying AdapiveThreshold to separate the digits with background. 
+
+| Image | Binary Image|
+| ------------- | ------------- |
+| <img src="https://github.com/nguyenhaphan1/ID-Recognition-With-Contour-Separation-And-Classifier/blob/main/images/id_15.jpg" alt="mjsynth" width="118" height="31"> | <img src="https://github.com/nguyenhaphan1/ID-Recognition-With-Contour-Separation-And-Classifier/blob/main/images/binary.png" alt="mjsynth" width="118" height="31"> |
+
+After that, finding contour of the images, draw bounding box for each contour (each bbox represent the image of a single digit. Using attribute such as width, height and area to split digits sticking together into single digit.
 
 Example of digits sticked together:
 
